@@ -4,36 +4,19 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInita3be87b6c6190fbb2fdca7bd229ab85e
+class ComposerStaticInitd07d04b6e0221e597b4a62475c0f5ba9
 {
-    public static $files = array (
-        'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
-    );
-
     public static $prefixLengthsPsr4 = array (
-        'R' => 
+        'P' => 
         array (
-            'Ramsey\\Uuid\\' => 12,
-            'Ramsey\\Collection\\' => 18,
-        ),
-        'B' => 
-        array (
-            'Brick\\Math\\' => 11,
+            'PhpAmqpLib\\' => 11,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Ramsey\\Uuid\\' => 
+        'PhpAmqpLib\\' => 
         array (
-            0 => __DIR__ . '/..' . '/ramsey/uuid/src',
-        ),
-        'Ramsey\\Collection\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/ramsey/collection/src',
-        ),
-        'Brick\\Math\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/brick/math/src',
+            0 => __DIR__ . '/..' . '/php-amqplib/php-amqplib/PhpAmqpLib',
         ),
     );
 
@@ -44,9 +27,9 @@ class ComposerStaticInita3be87b6c6190fbb2fdca7bd229ab85e
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInita3be87b6c6190fbb2fdca7bd229ab85e::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInita3be87b6c6190fbb2fdca7bd229ab85e::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInita3be87b6c6190fbb2fdca7bd229ab85e::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitd07d04b6e0221e597b4a62475c0f5ba9::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitd07d04b6e0221e597b4a62475c0f5ba9::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitd07d04b6e0221e597b4a62475c0f5ba9::$classMap;
 
         }, null, ClassLoader::class);
     }

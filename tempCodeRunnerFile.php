@@ -1,5 +1,5 @@
 <?php 
-require_once "./app/CSRF.php";
+require_once "./server-side/CSRF.php";
 ?>
 <head>
 <div id="alerter"> </div>

@@ -10,7 +10,7 @@ document.getElementById("submit-button").addEventListener("click", function(even
         }
     };
     
-    xhr.open("POST", "./app/handleimages.php", true);
+    xhr.open("POST", "./server-side/handleimages.php", true);
     
     var formData = new FormData(form);
     formData.append('token', '<?php echo CSRF::get_token(); ?>');

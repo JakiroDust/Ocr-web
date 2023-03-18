@@ -43,7 +43,7 @@ document.getElementById("submit-button").addEventListener("click", function(even
       const loadingBar = document.getElementById("progress");
       loadingBar.style.width = "0%"; // initially set the width to 0%
 
-      fetch('./app/handleimages.php', {
+      fetch('./server-side/handleimages.php', {
         method: 'POST',
         body: new FormData(form),
         onUploadProgress: function(progressEvent) {
