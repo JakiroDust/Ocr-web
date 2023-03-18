@@ -1,0 +1,11 @@
+x = input()
+for i in range(x):
+    if(x%i==0):
+        temp=i
+        break
+sum=temp
+for i in range(temp+1,x//temp+1):
+    if(x%i==0):
+        sum=sum+temp
+    
+    
