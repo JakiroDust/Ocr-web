@@ -8,5 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'Ramsey\\Uuid\\' => array($vendorDir . '/ramsey/uuid/src'),
     'Ramsey\\Collection\\' => array($vendorDir . '/ramsey/collection/src'),
+    'PhpAmqpLib\\' => array($vendorDir . '/php-amqplib/php-amqplib/PhpAmqpLib'),
     'Brick\\Math\\' => array($vendorDir . '/brick/math/src'),
 );

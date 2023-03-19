@@ -16,6 +16,10 @@ class ComposerStaticInitc05b5231a24ffb10adf6b831f1c648a1
             'Ramsey\\Uuid\\' => 12,
             'Ramsey\\Collection\\' => 18,
         ),
+        'P' => 
+        array (
+            'PhpAmqpLib\\' => 11,
+        ),
         'B' => 
         array (
             'Brick\\Math\\' => 11,
@@ -30,6 +34,10 @@ class ComposerStaticInitc05b5231a24ffb10adf6b831f1c648a1
         'Ramsey\\Collection\\' => 
         array (
             0 => __DIR__ . '/..' . '/ramsey/collection/src',
+        ),
+        'PhpAmqpLib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-amqplib/php-amqplib/PhpAmqpLib',
         ),
         'Brick\\Math\\' => 
         array (

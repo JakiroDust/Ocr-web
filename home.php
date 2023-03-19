@@ -1,5 +1,6 @@
 <?php 
 require_once "./server-side/CSRF.php";
+
 ?>
 <head>
 

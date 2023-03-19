@@ -15,9 +15,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     receive_file_check();
 
     $uuid = Uuid::uuid4()->toString();
-    saveUploadedFilesToFolder(__DIR__,$uuid);
-    processImage(); 
-    //getCheck();
+    saveUploadedFilesToFolder(__DIR__."\\client_file\\images\\",$uuid);
+    rabbitMQ_connect(__DIR__."\\client_file\\images\\",$uuid);
     echo json_encode(array('uuid' => $uuid));
 }
 ?>

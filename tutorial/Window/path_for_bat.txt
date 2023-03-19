@@ -1,0 +1,1 @@
+remember to change extension_dir to your php loc "D:\php\ext"

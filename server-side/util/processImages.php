@@ -1,7 +1,7 @@
 <?php
 function saveUploadedFilesToFolder($dir,$userUUID) {
     $files = $_FILES['images'];
-    $destinationFolder = $dir."\\client_file\\images\\".$userUUID;
+    $destinationFolder = $dir.$userUUID;
     if (!is_dir($destinationFolder)) {
         mkdir($destinationFolder, 0755);
     }

@@ -6,7 +6,7 @@ connection = pika.BlockingConnection(pika.ConnectionParameters('localhost', port
 channel = connection.channel()
 
 # Declare the queue
-channel.queue_declare(queue='image_processing_queue',durable= True)
+channel.queue_declare(queue='image_processing_queue')
 
 # Define the callback function to process the images
 def process_image(ch, method, properties, body):

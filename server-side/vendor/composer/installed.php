@@ -3,7 +3,7 @@
         'name' => '__root__',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'a801973d9192fafe8459009016a75df8e531d112',
+        'reference' => '67270ebfb06062eb35d0cd557dec8213c53a0ddc',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         '__root__' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'a801973d9192fafe8459009016a75df8e531d112',
+            'reference' => '67270ebfb06062eb35d0cd557dec8213c53a0ddc',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -25,6 +25,15 @@
             'reference' => '459f2781e1a08d52ee56b0b1444086e038561e3f',
             'type' => 'library',
             'install_path' => __DIR__ . '/../brick/math',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'php-amqplib/php-amqplib' => array(
+            'pretty_version' => 'v2.8.0',
+            'version' => '2.8.0.0',
+            'reference' => '7df8553bd8b347cf6e919dd4a21e75f371547aa0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../php-amqplib/php-amqplib',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -50,6 +59,12 @@
             'dev_requirement' => false,
             'replaced' => array(
                 0 => '4.7.3',
+            ),
+        ),
+        'videlalvaro/php-amqplib' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => 'v2.8.0',
             ),
         ),
     ),
