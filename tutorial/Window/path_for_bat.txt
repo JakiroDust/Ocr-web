@@ -1,1 +1,2 @@
-remember to change extension_dir to your php loc "D:\php\ext"
+Get for RabbitMQ path
+choco list --local-only rabbitmq --id-only --exact | % { choco info $_ --exact --format=xml } | Select-Xml "//package/registryValues/add[@key='InstallLocation']" | % { $_.Node.value }

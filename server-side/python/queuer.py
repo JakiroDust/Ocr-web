@@ -1,23 +1,7 @@
 import pika
 import time
-
-# Connect to RabbitMQ
-connection = pika.BlockingConnection(pika.ConnectionParameters('localhost', port=5672))
-channel = connection.channel()
-
-# Declare the queue
-channel.queue_declare(queue='image_processing_queue',durable= True)
-
-# Define the callback function to process the images
-def process_image(ch, method, properties, body):
-    # Simulate image processing time
-    time.sleep(10)
-    print("Processed image:", body.decode())
-    ch.basic_ack(delivery_tag=method.delivery_tag)
-
-# Consume messages from the queue
-channel.basic_qos(prefetch_count=1)
-channel.basic_consume(queue='image_processing_queue', on_message_callback=process_image)
-
-print('Waiting for messages...')
-channel.start_consuming()
+from rabbit_MQ import RabbitMQ
+from process_ocr import process_image
+rabbitMq=RabbitMQ()
+rabbitMq.add_consumer("image_processing_queue",process_image)
+rabbitMq.start()

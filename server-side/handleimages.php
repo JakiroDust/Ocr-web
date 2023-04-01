@@ -1,10 +1,10 @@
 <?php
-foreach (glob("./util/*.php") as $filename) {
+foreach (glob("./handle_user_upload/*.php") as $filename) {
     require_once $filename;
 }
 preReceive_File_Check();
 
-require_once "./CSRF.php";
+require_once "./session_security/CSRF.php";
 require_once  './vendor/autoload.php';
 use Ramsey\Uuid\Uuid;
 $uuid = Uuid::uuid4();

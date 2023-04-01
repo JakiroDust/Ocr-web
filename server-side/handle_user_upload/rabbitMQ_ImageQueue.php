@@ -15,7 +15,7 @@ function  rabbitMQ_connect($dirpath,$requestId)
     // Publish the image processing request to the queue
     $message = [
         'request_id' => $requestId,
-        'image_path' => $dirpath."/".$requestId,
+        'image_path' => $dirpath.$requestId,
     ];
     $channel->basic_publish(new \PhpAmqpLib\Message\AMQPMessage(json_encode($message)), '', 'image_processing_queue');
 

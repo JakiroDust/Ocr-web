@@ -1,0 +1,2 @@
+import _process_image.sample
+process_image = _process_image.sample.process_image

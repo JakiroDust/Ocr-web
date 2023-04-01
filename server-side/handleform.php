@@ -1,5 +1,5 @@
 <?php
-require_once "./CSRF.php";
+require_once "./session_security/CSRF.php";
 
 if(isset($_POST['login']))
 {
