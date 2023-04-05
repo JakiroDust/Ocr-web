@@ -1,6 +1,5 @@
 <?php 
-require_once "./server-side/CSRF.php";
-
+require_once "./server-side/session_security/CSRF.php";
 ?>
 <head>
 
@@ -15,10 +14,15 @@ require_once "./server-side/CSRF.php";
     <br>
     <input type="button" id="submit-button" value="Upload">
 </form>
+<div id="image_container" name=""></div>
 
-<div id="progress-bar">
-  <div id="progress"></div>
-</div>
+<script>
+var default_function
+</script>
+<script  src="./client-side/summit_form.js"></script>
 
-<script src="./client-side/form.js"></script>
+<script type= "module" src="./client-side/display_submited_image.js">
+</script>
+<script>
 
+</script>

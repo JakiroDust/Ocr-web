@@ -1,25 +1,2 @@
-#alerter {
-  position: absolute; 
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-  width: 200px;
-  height: auto;
-  background-color: black; 
-  color: white;
-  text-align: center;
-  display: none;
-}
-
-#progress-bar {
-  width: 100%;
-  background-color: #f1f1f1;
-}
-
-#progress {
-  height: 10px;
-  background-color: #4caf50;
-  width: 0%;
-  transition: width 0.5s;
-}
+@import "./client-side/resources/css/image.css";
+@import "./client-side/resources/css/close_button.css";
